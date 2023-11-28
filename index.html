@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;800&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="center-window" id="main">
+      <img class="img-main" src="./images/icon-star.svg" alt="estrella">
+      <h2>How did we do?</h2>
+      <p>  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+        <ul class="rating">
+          <li class="elements">1</li>
+          <li class="elements">2</li>
+          <li class="elements">3</li>
+          <li class="elements">4</li>
+          <li class="elements">5</li>
+        </ul>
+
+        <button class="btn" id="button-submit">Submit</button>
+    </section>
+
+
+
+    <section class="center-window container-thank-you hidden" id="thank-you-window">
+      <img src="./images/illustration-thank-you.svg" alt="" class="img-thank-you">
+      <h5>You selected <span id="number-selected"></span> out of 5</h5>
+      <h1> Thank you!</h1>
+      <p> 
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+        <button class="btn" id="btn-go-back">Go Back</button>
+    </section>
+
+  </main>
+
+  
+
+
+
+  <!-- Thank you state end -->
+
+  
+  <script src="./scripts.js"></script>
+</body>
+</html>
